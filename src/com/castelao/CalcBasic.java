@@ -1,3 +1,5 @@
+package com.castelao;
+
 /**
  * Libreria para realizar calculos basicos recibiendo dos float y un int de que opcion realizar
  * @version 1.0
@@ -45,26 +47,41 @@ public class CalcBasic {
         switch (opcion) {
 
             case SUMA:
-
-                RESULTADO[0] = numero1 + numero2;
+                try {
+                    RESULTADO[0] = numero1 + numero2;
+                } catch (NullPointerException exception) {
+                    return null;
+                }
 
                 return RESULTADO;
 
             case RESTA:
 
-                RESULTADO[0] = numero1 - numero2;
+                try {
+                    RESULTADO[0] = numero1 - numero2;
+                } catch (NullPointerException exception) {
+                    return null;
+                }
 
                 return RESULTADO;
 
             case MULTIPLICACION:
 
-                RESULTADO[0] = numero1 * numero2;
+                try {
+                    RESULTADO[0] = numero1 * numero2;
+                } catch (NullPointerException exception) {
+                    return null;
+                }
 
                 return RESULTADO;
 
             case DIVISION:
 
-                RESULTADO[0] = Math.round(numero1 / numero2);
+                try {
+                    RESULTADO[0] = Math.round(numero1 / numero2);
+                } catch (NullPointerException exception) {
+                    return null;
+                }
 
                 return RESULTADO;
 

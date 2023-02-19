@@ -1,6 +1,6 @@
 # LIBRERIA CALCULADORA BASICA
 
-Nombre: CalcBasic
+Nombre: com.castelao.CalcBasic
 
 
 Funcionalidad: Libreria para realizar calculos basicos (Suma, Resta, Multiplicacion, Division)
