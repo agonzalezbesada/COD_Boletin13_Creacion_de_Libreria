@@ -26,6 +26,7 @@ public class CalcBasic {
     /**
      * Array resultado de la operacion
      */
+    public static final int RAIZ = 5;
     public static final float[] RESULTADO= new float[1];
 
 
