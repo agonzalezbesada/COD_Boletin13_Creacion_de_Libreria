@@ -24,6 +24,10 @@ public class CalcBasic {
      */
     public static final int DIVISION = 4;
     /**
+     * Opcion de raiz cuadrada
+     */
+    public static final int RAIZ_CUADRADA = 5;
+    /**
      * Array resultado de la operacion
      */
     public static final float[] RESULTADO= new float[1];
@@ -83,6 +87,14 @@ public class CalcBasic {
                     return null;
                 }
 
+                return RESULTADO;
+
+            case RAIZ_CUADRADA:
+                try {
+                    RESULTADO[0] = (float) Math.pow(numero1, 1/2);
+                } catch (NullPointerException exception) {
+                    return null;
+                }
                 return RESULTADO;
 
             default:
