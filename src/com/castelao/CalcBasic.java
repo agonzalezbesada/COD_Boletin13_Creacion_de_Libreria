@@ -24,7 +24,7 @@ public class CalcBasic {
      */
     public static final int DIVISION = 4;
     /**
-     * Opcion de raiz a elegir
+     * Opcion de raiz a elegir numero1=radicando   numero2=indice
      */
     public static final int RAIZ = 5;
     /**
